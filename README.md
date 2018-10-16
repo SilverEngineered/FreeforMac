@@ -12,7 +12,7 @@ Append the line alias free='sh /Path/To/free.sh'
 Save and with vim by pressing escape followed by "wq!" and enter.
 Source your bash profile by typing the command "source .bash_profile" in the same directory you are currently in.
 
-Voila! typing "free" in any folder in your mac terminal should yield information about your RAM usage similar to this. 
+Voila! typing "free" in any directory in your mac terminal should yield information about your RAM usage similar to this. 
 
                   total        used        unused      wired
     Mem:           8192        3253          4937       1945
