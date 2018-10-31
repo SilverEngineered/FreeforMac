@@ -11,19 +11,19 @@ set -- $top_info #Split used info to $3, unused to $1, and wired to $2
 total_mem_size=${#total_mem_mb} #String length of total memory size in mb
 used_mem_size=${#3} #String length of used memory size in mb
 unused_mem_size=${#1} #String length of unused memory size in mb
-echo "              total        used        unused      wired"
+echo "              total       unused        used      wired"
 #mem_line="$(echo "Mem:          $total_mem_mb")"
 mem_line="$(echo "Mem:")"
 for i in `seq 1 $((15-$total_mem_size))`; do
             mem_line+=" "
         done
 mem_line+=$total_mem_mb
-for i in `seq 1 $((12-$used_mem_size))`; do
+for i in `seq 1 $((13-$used_mem_size))`; do
             mem_line+=" "
         done
 mem_line+="$3"
 
-for i in `seq 1 $((14-$unused_mem_size))`; do
+for i in `seq 1 $((12-$unused_mem_size))`; do
             mem_line+=" "
         done
 mem_line+="$1"
